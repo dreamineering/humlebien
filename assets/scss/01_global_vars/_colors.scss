@@ -24,7 +24,7 @@ $asbestos: rgba(127,140,141,1);
 
 // site settings
 
-$brand-color:           rgba(192, 57, 43, 1.0);
+$brand-color:           $orange;
 $brand-color-dark:      shade($brand-color, 20%);
 $brand-color-light:     tint($brand-color, 95%);
 
