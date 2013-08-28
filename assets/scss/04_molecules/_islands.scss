@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+// take care of margins off the bottom of islands
+ 
+.island > *:last-child,
+.island > *:last-child > *:last-child,
+.island > *:last-child > *:last-child > *:last-child
+.islet > *:last-child,
+.islet > *:last-child > *:last-child,
+.islet > *:last-child > *:last-child > *:last-child {
+  margin: 0;
+}
+
+

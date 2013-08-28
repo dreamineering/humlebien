@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*  
+ *  inuit see
+ *  
+ *  base/smallprint
+  * base/paragraphs
+  * base/quotes
+ */
+
+
+ // needed overwrite inuit because of encoding issue
+// TODO figure out encoding issue
+
+blockquote{
+    quotes:"#{$open-quote}" "#{$close-quote}";
+
+    @include font-size($base-font-size * 0.75);
+
+    p:before{
+        content:"''";
+        content:"'";
+    }
+    p:after{
+        content:"";
+        content:"'";
+    }
+    p:last-of-type:before{
+        content:"";
+    }
+
+    p:last-of-type:after{
+        content:"";
+    }
+
+    q:before{
+        content:"'";
+        content:"'";
+    }
+    q:after{
+        content:"'";
+        content:"'";
+    }
+
+    @include media-query(lap-and-up) {
+        @include font-size($base-font-size * 0.85);
+    }
+  
+}

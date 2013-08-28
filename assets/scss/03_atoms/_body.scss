@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+html{
+    // font-family:Ubuntu, sans-serif;
+    // font-weight:300;
+    // background-color:#f9f9f9;
+    // color:#444;
+}
+
+/**
+ * 1. Base unit plus the 10px taken up by `.strip`.
+ */
+body{
+
+}
+
+$base-spacing-unit:  12px;
+
+$half-spacing-unit:  $base-spacing-unit;
+
+/**
+ * Page-level wrapper.
+ */
+.wrapper{
+    max-width:                 1100px;
+    margin-right:              auto;
+    margin-left:               auto;
+    padding-right:             $base-spacing-unit;
+    padding-left:              $base-spacing-unit;
+    
+    // @include media-query(portable){
+    //     padding-right:         $half-spacing-unit;
+    //     padding-left:          $half-spacing-unit;
+    //     max-width:             640px;
+    // }
+}
+
+
+.browser-notice {
+    padding:      4em;
+} 
