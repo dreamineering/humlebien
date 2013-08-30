@@ -2,6 +2,7 @@
   <?php the_content(); ?>
 
   <!--  WHERE THE MAGIC HAPPENS -->
+
   <h2 class="section-title" id="arrows">Arrows</h2>
 
   <p>It is a common design treatment to give an element a triangular points-out arrow, we typically build these with CSS. These following classes allow us to generate these arbitrarily with a mixin</p>
