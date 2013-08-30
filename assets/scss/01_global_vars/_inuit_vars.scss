@@ -77,6 +77,7 @@
 
 // $lap-start:         481px!default;
 // $desk-start:        1024px!default;
+$desk-start:           700px!default;
 // $desk-wide-start:   1200px!default;
 
 
@@ -90,16 +91,19 @@
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
 
-// $giga-size:         96px!default;
+$giga-size:            147px!default;
 // $mega-size:         67px;
 // $kilo-size:         48px!default;
 
 // $h1-size:           36px!default; // .alpha
+$h1-size:              32px!default; // .alpha
 // $h2-size:           30px!default; // .beta
+$h2-size:              26px!default; // .beta
 // $h3-size:           24px!default; // .gamma
-// $h4-size:           20px!default; // .delta
-// $h5-size:           16px!default; // .epsilon
-// $h6-size:           14px!default; // .zeta
+$h3-size:              22px!default; // .gamma
+$h4-size:              18px!default; // .delta
+$h5-size:              16px!default; // .epsilon
+$h6-size:              14px!default; // .zeta
 
 // $milli-size:        12px!default;
 // $micro-size:        10px!default;

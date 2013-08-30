@@ -978,27 +978,27 @@ html {
  * heading hierarchy.
  */
 h1, .alpha {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.33333;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 h2, .beta {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.84615;
 }
 
 h3, .gamma {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.09091;
 }
 
 h4, .delta {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
 }
 
 h5, .epsilon {
@@ -1032,9 +1032,9 @@ hgroup .hN {
  * promos, etc.
  */
 .giga {
-  font-size: 96px;
-  font-size: 6rem;
-  line-height: 1;
+  font-size: 147px;
+  font-size: 9.1875rem;
+  line-height: 1.14286;
 }
 
 .mega {
@@ -2260,7 +2260,7 @@ html.flexbox {
  * Wait for a certain breakpoint to trigger ‘proper' marginalia. Up to this point,
  * marginalia are inline with the other text.
  */
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   .marginalia {
     position: relative;
   }
@@ -3546,7 +3546,7 @@ html.flexbox {
     width: 91.666%;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 699px) {
   /**
   * Whole
   */
@@ -3794,7 +3794,7 @@ html.flexbox {
     width: 91.666%;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 699px) {
   /**
   * Whole
   */
@@ -3918,7 +3918,7 @@ html.flexbox {
     width: 91.666%;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 700px) {
   /**
   * Whole
   */
@@ -4408,7 +4408,7 @@ html.flexbox {
     width: 1px!important;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 699px) {
   .accessibility--lap,
   .visuallyhidden--lap {
     border: 0!important;
@@ -4434,7 +4434,7 @@ html.flexbox {
     width: 1px!important;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 699px) {
   .accessibility--portable,
   .visuallyhidden--portable {
     border: 0!important;
@@ -4447,7 +4447,7 @@ html.flexbox {
     width: 1px!important;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 700px) {
   .accessibility--desk,
   .visuallyhidden--desk {
     border: 0!important;
@@ -4510,11 +4510,26 @@ html.flexbox {
 /**
  * 1. Base unit plus the 10px taken up by `.strip`.
  */
+@media only screen and (min-width: 481px) {
+  body {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
+  }
+}
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+}
+
 /**
  * Page-level wrapper.
  */
 .wrapper {
-  max-width: 1100px;
+  max-width: 1060px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 24px;
@@ -4537,6 +4552,67 @@ a:focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif;
+  letter-spacing: -1px;
+}
+
+h1, .alpha {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
+  line-height: 35px;
+}
+@media only screen and (min-width: 481px) {
+  h1, .alpha {
+    font-size: 52px;
+    font-size: 3.25rem;
+    line-height: 1.38462;
+    line-height: 1;
+  }
+}
+
+h2, .beta {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.84615;
+}
+@media only screen and (min-width: 481px) {
+  h2, .beta {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 1.6;
+    line-height: 1;
+  }
+}
+@media only screen and (min-width: 481px) {
+  h2, .beta {
+    font-size: 33px;
+    font-size: 2.0625rem;
+    line-height: 1.45455;
+  }
+}
+
+h3, .gamma {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.09091;
+}
+
+h4, .delta {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h6, .zeta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
 }
 
 /*  
@@ -4633,13 +4709,17 @@ figcaption {
 }
 
 .brand {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
   color: #e67e22;
+  line-height: 1.5;
   font-family: "Butterfly Kids", cursive;
-  font-size: 4em;
 }
 @media only screen and (min-width: 481px) {
   .brand {
-    font-size: 10em;
+    font-size: 147px;
+    font-size: 9.1875rem;
   }
 }
 

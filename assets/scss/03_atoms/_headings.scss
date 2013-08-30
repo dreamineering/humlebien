@@ -2,4 +2,36 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family:   $headings-face;
+  letter-spacing: -1px;
+}
+
+h1,.alpha{
+  @include font-size($h1-size);
+  line-height: 35px;
+  @include media-query(lap-and-up){
+    @include font-size(52px);
+    line-height: 1;
+  }
+}
+h2,.beta{
+  @include font-size($h2-size);
+  @include media-query(lap-and-up){
+    @include font-size(30px);
+    line-height: 1;
+  }
+  @include media-query(lap-and-up){
+    @include font-size(33px);
+  }
+}
+h3,.gamma{
+    @include font-size($h3-size);
+}
+h4,.delta{
+    @include font-size($h4-size);
+}
+h5,.epsilon{
+    @include font-size($h5-size);
+}
+h6,.zeta{
+    @include font-size($h6-size);
 }

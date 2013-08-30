@@ -16,6 +16,13 @@ html{
  * 1. Base unit plus the 10px taken up by `.strip`.
  */
 body{
+
+  @include media-query(lap-and-up){
+    @include font-size(18px);
+  }
+  @include media-query(desk){
+    @include font-size(20px);
+  }
   
 }
 
@@ -23,11 +30,13 @@ body{
  * Page-level wrapper.
  */
 .wrapper{
-    max-width:                 900px;
+    max-width:                 1060px;
     margin-right:              auto;
     margin-left:               auto;
     padding-right:             $base-spacing-unit;
     padding-left:              $base-spacing-unit;
+
+
     
     // @include media-query(portable){
     //     padding-right:         $half-spacing-unit;

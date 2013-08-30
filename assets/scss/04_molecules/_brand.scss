@@ -1,11 +1,12 @@
 
 
 .brand {
+  @include      font-size($kilo-size);
   color:        $brand-color;
+  line-height:  1.5;
   font-family:  $brand-face;
-  font-size:    4em;
   @include media-query(lap-and-up) {
-    font-size:    10em;
+    @include      font-size($giga-size, false);
   }
 }
 
