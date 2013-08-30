@@ -1,0 +1,13 @@
+
+
+.brand {
+  color:        $brand-color;
+  font-family:  $brand-face;
+  font-size:    4em;
+  @include media-query(lap-and-up) {
+    font-size:    10em;
+  }
+}
+
+.brand--banner {
+}

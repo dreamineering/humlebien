@@ -22,20 +22,43 @@ $pomegranate: rgba(192,57,43,1);
 $silver: rgba(189,195,199,1);
 $asbestos: rgba(127,140,141,1);
 
-// site settings
 
-$brand-color:           $orange;
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+
+$base-font-size:    16px;
+$base-line-height:  24px;
+
+/**
+ * Base font-family. 
+ */
+
+$base-font-family:  'Merriweather', serif;
+$brand-face:          'Butterfly Kids', cursive;
+$headings-face:       'Varela Round', sans-serif;
+
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+
+$brand-color:           $carrot;
 $brand-color-dark:      shade($brand-color, 20%);
 $brand-color-light:     tint($brand-color, 95%);
 
+/**
+ * How big would you like round corners to be by default?
+ */
+// $brand-round:        4px!default;
 
-$big-question:          rgba(0, 157, 43,0.6);
+/*------------------------------------*\
+    $COLOR SCHEME
+\*------------------------------------*/
 
+// Primary color set body text
+$primary-color:         rgba(0,0,0,1); 
+$base-ui-color:         $primary-color;           
 
-// TODO find a good web tool to save a color palette to and link here
-
-// We use these as default colors throughout
-$primary-color:         rgba(0,0,0,1);            
 
 $secondary-color:       #e9e9e9 !default;       // Very light gray.
 $alert-color:           #c60f13 !default;       // Strong red.
@@ -50,7 +73,4 @@ $light-gray:            #eee;                   // Light gray
 
 
 $topbar-bg:             rgba(255,255,255, 0.97);
-
-
-
 

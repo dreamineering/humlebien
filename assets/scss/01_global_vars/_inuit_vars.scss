@@ -28,34 +28,6 @@
 
 
 
-
-/*------------------------------------*\
-    $BASE
-\*------------------------------------*/
-/**
- * Base stuff
- */
-
-
-$base-font-size:    16px;
-$base-line-height:  24px;
-
-/**
- * Base font-family. 
- */
-
-$base-font-family:  "Source Sans Pro", sans-serif;
-
-/**
- * Default colour for objects’ borders etc.
- */
-
-// $base-ui-color:     #ccc!default;
-
-
-
-
-
 /*------------------------------------*\
     $RESPONSIVE
 \*------------------------------------*/
@@ -119,7 +91,7 @@ $base-font-family:  "Source Sans Pro", sans-serif;
  */
 
 // $giga-size:         96px!default;
-$mega-size:         67px;
+// $mega-size:         67px;
 // $kilo-size:         48px!default;
 
 // $h1-size:           36px!default; // .alpha
@@ -143,7 +115,7 @@ $mega-size:         67px;
  * English quote marks?
  */
 
-$english-quotes:    true;
+// $english-quotes:    true;
 
 /**
  * If you want English quotes then please do not edit these; they’re only here
@@ -163,22 +135,6 @@ $english-quotes:    true;
 
 
 
-
-
-/*------------------------------------*\
-    $BRAND
-\*------------------------------------*/
-/**
- * Brand stuff
- */
-
-// $brand-color:       #4a8ec2!default;
-$brand-face:          "Helvetica Neue";
-
-/**
- * How big would you like round corners to be by default?
- */
-// $brand-round:        4px!default;
 
 
 

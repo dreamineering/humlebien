@@ -1,0 +1,99 @@
+
+
+//Arrows
+.test-arrow {
+  display: inline-block;
+  width: em(100px);
+  height: em(100px);
+  margin: 0 em(15px) em(15px) 0;
+  padding-top: em(40px);
+  background-color: $brand-color;
+  color: $brand-color-light;
+  text-align: center;
+}
+.test-arrow--top-left {
+  @include arrow(top, left, $brand-color);
+}
+.test-arrow--top-right {
+  @include arrow(top, right, $brand-color);
+}
+.test-arrow--top-center {
+  @include arrow(top, center, $brand-color);
+}
+.test-arrow--right-top {
+  @include arrow(right, top, $brand-color);
+}
+.test-arrow--right-center {
+  @include arrow(right, center, $brand-color);
+}
+.test-arrow--right-bottom {
+  @include arrow(right, bottom, $brand-color);
+}
+.test-arrow--bottom-left {
+  @include arrow(bottom, left, $brand-color);
+}
+.test-arrow--bottom-center {
+  @include arrow(bottom, center, $brand-color);
+}
+.test-arrow--bottom-right {
+  @include arrow(bottom, right, $brand-color);
+}
+.test-arrow--left-top {
+  @include arrow(left, top, $brand-color);
+}
+.test-arrow--left-center {
+  @include arrow(left, center, $brand-color);
+}
+.test-arrow--left-bottom {
+  @include arrow(left, bottom, $brand-color);
+}
+
+
+
+//Full Bleed
+.bleed-demo {
+  background-color: $brand-color;
+  color: $brand-color-light;
+}
+
+//Flexbox
+.flexbox-demo {
+  margin-bottom:  1em;
+  border: 1px solid ;
+}
+
+//Floats
+.float-demo {
+  width: em(100px);
+  + hr  {
+    clear: both;
+  }
+}
+
+//Margins/Paddings Demo
+.margins-demo,
+.paddings-demo {
+  display: inline-block;
+  margin-bottom: em(10px);
+  background-color: orange;
+  text-align: center;
+}
+.margins-demo__item,
+.paddings-demo__item {
+  display: inline-block;
+  width: em(100px);
+  height: em(100px);
+  vertical-align: top;
+  background: #ace;
+}
+.margins-demo--full-margin {
+  margin: $base-spacing-unit;
+}
+.paddings-demo--full-padding {
+  padding: $base-spacing-unit;
+}
+
+//Grids
+.grid-demo {
+  border: 1px solid darken($base-ui-color, 40%);
+}

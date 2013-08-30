@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Butterfly+Kids|Varela+Round|Merriweather:400,700);
 /*------------------------------------*\
     $DEBUG
 \*------------------------------------*/
@@ -12,18 +13,6 @@
 /**
  * Do you want all elements to adopt `box-sizing:border-box;` as per
  * paulirish.com/2012/box-sizing-border-box-ftw ?
- */
-/*------------------------------------*\
-    $BASE
-\*------------------------------------*/
-/**
- * Base stuff
- */
-/**
- * Base font-family. 
- */
-/**
- * Default colour for objects’ borders etc.
  */
 /*------------------------------------*\
     $RESPONSIVE
@@ -68,15 +57,6 @@
  * If you need non-English quotes, please alter the following values accordingly:
  */
 /*------------------------------------*\
-    $BRAND
-\*------------------------------------*/
-/**
- * Brand stuff
- */
-/**
- * How big would you like round corners to be by default?
- */
-/*------------------------------------*\
     $OBJECTS AND ABSTRACTIONS
 \*------------------------------------*/
 /**
@@ -91,6 +71,21 @@
  * Assign our `$base-line-height` to a new spacing var for more transparency.
  */
 /* flat UI colors */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base font-family. 
+ */
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+/**
+ * How big would you like round corners to be by default?
+ */
+/*------------------------------------*\
+    $COLOR SCHEME
+\*------------------------------------*/
 /* 
  * mostly for setting heights of the major "islands"
  * at various view ports if this is the correct use?
@@ -967,7 +962,7 @@ ul, ol, dd {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1em/1.5 "Source Sans Pro", sans-serif;
+  font: 1em/1.5 "Merriweather", serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -1043,9 +1038,9 @@ hgroup .hN {
 }
 
 .mega {
-  font-size: 67px;
-  font-size: 4.1875rem;
-  line-height: 1.07463;
+  font-size: 72px;
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .kilo {
@@ -1549,7 +1544,7 @@ td {
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc;
+  border: 1px solid black;
 }
 .table--bordered th:empty,
 .table--bordered td:empty {
@@ -2059,7 +2054,7 @@ html.flexbox {
  *
  */
 .options > li > a {
-  border: 0 solid #cccccc;
+  border: 0 solid black;
   border-width: 1px;
   border-left-width: 0;
 }
@@ -2346,7 +2341,7 @@ html.flexbox {
 .block-list, .matrix,
 .block-list > li,
 .matrix > li {
-  border: 0 solid #cccccc;
+  border: 0 solid black;
 }
 
 .block-list, .matrix {
@@ -2619,9 +2614,84 @@ html.flexbox {
 /**
  * Forms the basis for any/all CSS arrows.
  */
+.test-arrow--top-left, .test-arrow--top-right, .test-arrow--top-center, .test-arrow--right-top, .test-arrow--left-top, .test-arrow--right-center, .test-arrow--left-center, .test-arrow--right-bottom, .test-arrow--left-bottom, .test-arrow--bottom-left, .test-arrow--bottom-center, .test-arrow--bottom-right {
+  position: relative;
+}
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--right-top:before, .test-arrow--left-top:before, .test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-bottom:before, .test-arrow--left-bottom:before, .test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before, .test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after, .test-arrow--right-top:after, .test-arrow--left-top:after, .test-arrow--right-center:after, .test-arrow--left-center:after, .test-arrow--right-bottom:after, .test-arrow--left-bottom:after, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  content: "";
+  position: absolute;
+  border-collapse: separate;
+}
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--right-top:before, .test-arrow--left-top:before, .test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-bottom:before, .test-arrow--left-bottom:before, .test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before {
+  border: 12px solid transparent;
+}
+.test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after, .test-arrow--right-top:after, .test-arrow--left-top:after, .test-arrow--right-center:after, .test-arrow--left-center:after, .test-arrow--right-bottom:after, .test-arrow--left-bottom:after, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  border: 11px solid transparent;
+}
+
 /**
  * Define individual edges so we can combine what we need, when we need.
  */
+.test-arrow--top-left:before, .test-arrow--top-right:before, .test-arrow--top-center:before, .test-arrow--top-left:after, .test-arrow--top-right:after, .test-arrow--top-center:after {
+  bottom: 100%;
+}
+
+.test-arrow--right-top:before, .test-arrow--left-top:before {
+  top: 11px;
+}
+.test-arrow--right-top:after, .test-arrow--left-top:after {
+  top: 12px;
+}
+
+.test-arrow--right-center:before, .test-arrow--left-center:before, .test-arrow--right-center:after, .test-arrow--left-center:after {
+  top: 50%;
+  margin-top: -12px;
+}
+.test-arrow--right-center:after, .test-arrow--left-center:after {
+  margin-top: -11px;
+}
+
+.test-arrow--right-bottom:before, .test-arrow--left-bottom:before {
+  bottom: 11px;
+}
+.test-arrow--right-bottom:after, .test-arrow--left-bottom:after {
+  bottom: 12px;
+}
+
+.test-arrow--bottom-left:before, .test-arrow--bottom-center:before, .test-arrow--bottom-right:before, .test-arrow--bottom-left:after, .test-arrow--bottom-center:after, .test-arrow--bottom-right:after {
+  top: 100%;
+}
+
+.test-arrow--left-top:before, .test-arrow--left-center:before, .test-arrow--left-bottom:before, .test-arrow--left-top:after, .test-arrow--left-center:after, .test-arrow--left-bottom:after {
+  right: 100%;
+}
+
+.test-arrow--top-left:before, .test-arrow--bottom-left:before {
+  left: 11px;
+}
+.test-arrow--top-left:after, .test-arrow--bottom-left:after {
+  left: 12px;
+}
+
+.test-arrow--top-center:before, .test-arrow--bottom-center:before, .test-arrow--top-center:after, .test-arrow--bottom-center:after {
+  left: 50%;
+  margin-left: -12px;
+}
+.test-arrow--top-center:after, .test-arrow--bottom-center:after {
+  margin-left: -11px;
+}
+
+.test-arrow--top-right:before, .test-arrow--bottom-right:before {
+  right: 11px;
+}
+.test-arrow--top-right:after, .test-arrow--bottom-right:after {
+  right: 12px;
+}
+
+.test-arrow--right-top:before, .test-arrow--right-center:before, .test-arrow--right-bottom:before, .test-arrow--right-top:after, .test-arrow--right-center:after, .test-arrow--right-bottom:after {
+  left: 100%;
+}
+
 /*------------------------------------*\
     $SPRITE
 \*------------------------------------*/
@@ -2995,7 +3065,7 @@ html.flexbox {
   padding-left: 0.25em;
   /* =1.50em */
   text-align: center;
-  background-color: #cccccc;
+  background-color: black;
   color: #fff;
   /* Override this color in your theme stylesheet */
   /**
@@ -3020,7 +3090,7 @@ html.flexbox {
  *
  */
 .rule {
-  color: #cccccc;
+  color: black;
   border: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -3998,17 +4068,17 @@ html.flexbox {
  * any element using a handy helper class.
  */
 .brand {
-  font-family: "Helvetica Neue!important";
-  color: #f39c12!important;
+  font-family: "Butterfly Kids", cursive!important;
+  color: #e67e22!important;
 }
 
 .brand-face {
-  font-family: "Helvetica Neue!important";
+  font-family: "Butterfly Kids", cursive!important;
 }
 
 .brand-color,
 .brand-colour {
-  color: #f39c12!important;
+  color: #e67e22!important;
 }
 
 /*------------------------------------*\
@@ -4447,8 +4517,8 @@ html.flexbox {
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .browser-notice {
@@ -4463,6 +4533,10 @@ a:hover,
 a:active,
 a:focus {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", sans-serif;
 }
 
 /*  
@@ -4535,11 +4609,11 @@ svg, .svg {
 }
 
 iframe {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 figure {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 figure img {
   margin-bottom: 12px;
@@ -4556,4 +4630,174 @@ figcaption {
 .islet > *:last-child > *:last-child,
 .islet > *:last-child > *:last-child > *:last-child {
   margin: 0;
+}
+
+.brand {
+  color: #e67e22;
+  font-family: "Butterfly Kids", cursive;
+  font-size: 4em;
+}
+@media only screen and (min-width: 481px) {
+  .brand {
+    font-size: 10em;
+  }
+}
+
+.nav--banner {
+  text-transform: uppercase;
+}
+.nav--banner li {
+  margin: 0 2em 0 0;
+}
+.nav--banner li:last-child {
+  margin: 0;
+}
+
+.content-info {
+  background-color: #e67e22;
+}
+
+.banner {
+  text-align: center;
+}
+
+.test-arrow {
+  display: inline-block;
+  width: 6.25em;
+  height: 6.25em;
+  margin: 0 0.9375em 0.9375em 0;
+  padding-top: 2.5em;
+  background-color: #e67e22;
+  color: #fdf8f3;
+  text-align: center;
+}
+
+.test-arrow--top-left:before {
+  border-bottom-color: #e67e22 !important;
+}
+.test-arrow--top-left:after {
+  border-bottom-color: #e67e22 !important;
+}
+
+.test-arrow--top-right:before {
+  border-bottom-color: #e67e22 !important;
+}
+.test-arrow--top-right:after {
+  border-bottom-color: #e67e22 !important;
+}
+
+.test-arrow--top-center:before {
+  border-bottom-color: #e67e22 !important;
+}
+.test-arrow--top-center:after {
+  border-bottom-color: #e67e22 !important;
+}
+
+.test-arrow--right-top:before {
+  border-left-color: #e67e22 !important;
+}
+.test-arrow--right-top:after {
+  border-left-color: #e67e22 !important;
+}
+
+.test-arrow--right-center:before {
+  border-left-color: #e67e22 !important;
+}
+.test-arrow--right-center:after {
+  border-left-color: #e67e22 !important;
+}
+
+.test-arrow--right-bottom:before {
+  border-left-color: #e67e22 !important;
+}
+.test-arrow--right-bottom:after {
+  border-left-color: #e67e22 !important;
+}
+
+.test-arrow--bottom-left:before {
+  border-top-color: #e67e22 !important;
+}
+.test-arrow--bottom-left:after {
+  border-top-color: #e67e22 !important;
+}
+
+.test-arrow--bottom-center:before {
+  border-top-color: #e67e22 !important;
+}
+.test-arrow--bottom-center:after {
+  border-top-color: #e67e22 !important;
+}
+
+.test-arrow--bottom-right:before {
+  border-top-color: #e67e22 !important;
+}
+.test-arrow--bottom-right:after {
+  border-top-color: #e67e22 !important;
+}
+
+.test-arrow--left-top:before {
+  border-right-color: #e67e22 !important;
+}
+.test-arrow--left-top:after {
+  border-right-color: #e67e22 !important;
+}
+
+.test-arrow--left-center:before {
+  border-right-color: #e67e22 !important;
+}
+.test-arrow--left-center:after {
+  border-right-color: #e67e22 !important;
+}
+
+.test-arrow--left-bottom:before {
+  border-right-color: #e67e22 !important;
+}
+.test-arrow--left-bottom:after {
+  border-right-color: #e67e22 !important;
+}
+
+.bleed-demo {
+  background-color: #e67e22;
+  color: #fdf8f3;
+}
+
+.flexbox-demo {
+  margin-bottom: 1em;
+  border: 1px solid;
+}
+
+.float-demo {
+  width: 6.25em;
+}
+.float-demo + hr {
+  clear: both;
+}
+
+.margins-demo,
+.paddings-demo {
+  display: inline-block;
+  margin-bottom: 0.625em;
+  background-color: orange;
+  text-align: center;
+}
+
+.margins-demo__item,
+.paddings-demo__item {
+  display: inline-block;
+  width: 6.25em;
+  height: 6.25em;
+  vertical-align: top;
+  background: #ace;
+}
+
+.margins-demo--full-margin {
+  margin: 24px;
+}
+
+.paddings-demo--full-padding {
+  padding: 24px;
+}
+
+.grid-demo {
+  border: 1px solid black;
 }
