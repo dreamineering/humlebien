@@ -2,6 +2,16 @@
 // all navigation styles here
 
 .nav {
+
+  a {
+    color:              $primary-color;
+  }
+  .active {
+    a {
+      border-bottom:    3px solid rgba(126,166,74,1);
+      //font-weight:      bold;
+    }
+  }
   
 }
 

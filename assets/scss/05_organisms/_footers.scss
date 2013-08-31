@@ -1,4 +1,33 @@
 
-.content-info {
-  background-color: $brand-color;
+.footer {
+
+}
+
+
+.footer--page {
+  color:          $alt-color;
+  h6 {
+    text-transform: uppercase;
+    margin:         1em 0 0 0;
+  }
+}
+
+.footer--page--light {
+  padding-top:      3em;
+  padding-bottom:   1em;
+  color:            $alt-color;
+  background-color: $page-foot-color-light;
+  a {
+    color:          $alt-color;
+  }
+  // ul {
+  //   margin-bottom:         0;
+  // }
+}
+.footer--page--dark {
+  padding:          2em 0 3em 0;
+  background-color: $page-foot-color;
+  a {
+    color:          $alt-link-color;
+  }
 }
