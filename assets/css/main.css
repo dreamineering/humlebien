@@ -4514,6 +4514,9 @@ html {
 /**
  * 1. Base unit plus the 10px taken up by `.strip`.
  */
+body {
+  overflow: hidden;
+}
 @media only screen and (min-width: 481px) {
   body {
     font-size: 18px;
@@ -4561,6 +4564,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif;
   letter-spacing: -1px;
+  color: #7ea64a;
 }
 
 h1, .alpha {
@@ -4716,6 +4720,11 @@ figcaption {
   text-align: left;
 }
 
+.btn--cta {
+  background-color: white;
+  color: #7ea64a;
+}
+
 .island > *:last-child,
 .island > *:last-child > *:last-child,
 .island > *:last-child > *:last-child > *:last-child
@@ -4723,6 +4732,20 @@ figcaption {
 .islet > *:last-child > *:last-child,
 .islet > *:last-child > *:last-child > *:last-child {
   margin: 0;
+}
+
+.island--cta {
+  padding-right: 3000px;
+  margin-right: -3000px;
+  padding-left: 3000px;
+  margin-left: -3000px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #7ea64a;
+  color: white;
+}
+.island--cta h3 {
+  color: white;
 }
 
 .brand {
@@ -4740,16 +4763,29 @@ figcaption {
   }
 }
 
+.logo {
+  position: relative;
+  width: 30%;
+  left: -33px;
+}
+@media only screen and (min-width: 700px) {
+  .logo {
+    top: 4em;
+    width: 100%;
+  }
+}
+
 .nav a {
   color: #646464;
+  border-bottom: 3px solid white;
 }
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-  border-bottom: 3px solid #7ea64a;
+  border-bottom: 3px solid #f1a13f;
 }
 .nav .active a {
-  border-bottom: 3px solid #7ea64a;
+  border-bottom: 3px solid #f1a13f;
 }
 
 .nav--banner {

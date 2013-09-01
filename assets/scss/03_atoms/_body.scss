@@ -17,6 +17,8 @@ html{
  */
 body{
 
+  overflow: hidden;
+
   @include media-query(lap-and-up){
     @include font-size(18px);
   }

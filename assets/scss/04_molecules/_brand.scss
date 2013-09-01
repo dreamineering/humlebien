@@ -12,3 +12,15 @@
 
 .brand--banner {
 }
+
+
+.logo {
+  position:    relative;
+  width:       30%;
+  left:        -33px;
+  @include media-query(desk) {
+    top:           4em;
+    //left:          -px;
+    width:         100%;
+  }
+}
