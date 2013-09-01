@@ -21,7 +21,7 @@ define('POST_EXCERPT_LENGTH', 40);
 function roots_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
-    $class = 'grid__item one-whole, desk-two-thirds';
+    $class = 'grid__item one-whole desk-one-thirds';
   } else {
     // Classes on full width pages
     $class = 'grid__item one-whole';

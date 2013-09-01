@@ -1,0 +1,10 @@
+
+.grid--rev{
+    @extend .grid;
+    direction:rtl;
+}
+
+    .grid--rev > .grid__item{
+        direction:ltr;
+        text-align:left;
+    }
