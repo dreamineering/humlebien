@@ -24,6 +24,7 @@ body{
   }
   @include media-query(desk){
     @include font-size(20px);
+    line-height: 1.4;
   }
   
 }
@@ -32,7 +33,7 @@ body{
  * Page-level wrapper.
  */
 .wrapper{
-    max-width:                 820px;
+    max-width:                 840px;
     margin-right:              auto;
     margin-left:               auto;
     padding-right:             $base-spacing-unit;

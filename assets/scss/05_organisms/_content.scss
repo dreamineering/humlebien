@@ -1,0 +1,22 @@
+
+
+.content {
+
+}
+
+.content--front-page {
+  margin-top:     1em;
+  position:       relative;
+  //background: url("../img/honeycomb.png") no-repeat top right;
+}
+
+.content--front-page:after {
+  background:     url("../img/honeycomb.png") no-repeat;
+  position:       absolute;
+  content:        "";
+  width:          70px;
+  height:         70px;
+  top:            -35px;
+  right:          -50px;
+  display:        block;
+}

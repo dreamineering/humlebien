@@ -1,0 +1,27 @@
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+// got to have overflow hidden on container
+.extendfull, .extendright
+{
+  padding-right: 3000px;
+  margin-right: -3000px;
+}
+
+.extendfull, .extendleft
+{
+  padding-left: 3000px;
+  margin-left: -3000px;
+}
