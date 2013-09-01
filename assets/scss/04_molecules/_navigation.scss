@@ -6,6 +6,11 @@
   a {
     color:              $primary-color;
   }
+  a:hover,
+  a:active,
+  a:focus {
+    border-bottom:    3px solid rgba(126,166,74,1);
+  }
   .active {
     a {
       border-bottom:    3px solid rgba(126,166,74,1);

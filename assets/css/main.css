@@ -4554,6 +4554,10 @@ a:focus {
   text-decoration: none;
 }
 
+a {
+  color: #f1a13f;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif;
   letter-spacing: -1px;
@@ -4729,6 +4733,11 @@ figcaption {
 
 .nav a {
   color: #646464;
+}
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+  border-bottom: 3px solid #7ea64a;
 }
 .nav .active a {
   border-bottom: 3px solid #7ea64a;

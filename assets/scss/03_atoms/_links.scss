@@ -10,3 +10,7 @@ a:active,
 a:focus{
   text-decoration:none;
 }
+
+a {
+  color: $brand-color;
+}
