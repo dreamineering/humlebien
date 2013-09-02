@@ -25,7 +25,7 @@
       </div><!--
     --><div class="grid__item one-whole desk-one-half">
         <p>Har du mere spørgsmål? du er velkommen til at</p>
-        <a class="btn btn--full btn--cta">siger hej</a>
+        <a href="kontakt" class="btn btn--full btn--cta">siger hej</a>
       </div>
     </div>
   </div>

@@ -22,9 +22,10 @@
 }
 
 .nav--banner {
+  letter-spacing: -1px;
   text-transform: uppercase;
   li {
-    margin: 0 2em 0 0;
+    margin: 0 0.2em 0 0;
   }
   li:last-child {
     margin: 0;
