@@ -19,7 +19,6 @@ function roots_scripts() {
   if (!is_admin() && current_theme_supports('jquery-cdn')) {
     wp_deregister_script('jquery');
     wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, null, false);
-    wp_register_script('maps', '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', false, null, false);
     add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
   }
 

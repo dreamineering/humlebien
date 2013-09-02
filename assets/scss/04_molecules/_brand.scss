@@ -11,6 +11,12 @@
 }
 
 .brand--banner {
+  line-height: 1.4;
+  font-weight: bold;
+  @include media-query(lap-and-up) {
+    line-height: 1;
+    font-weight: normal;
+  }
 }
 
 
@@ -27,7 +33,7 @@
 
 .cta {
   padding-top:          2em;
-  padding-bottom:       2em;
+  padding-bottom:       3em;
   padding-right:        3000px;
   margin-right:         -3000px;
   padding-left:         3000px;

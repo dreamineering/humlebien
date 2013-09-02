@@ -4778,6 +4778,17 @@ figcaption {
   }
 }
 
+.brand--banner {
+  line-height: 1.4;
+  font-weight: bold;
+}
+@media only screen and (min-width: 481px) {
+  .brand--banner {
+    line-height: 1;
+    font-weight: normal;
+  }
+}
+
 .logo {
   position: relative;
   width: 30%;
@@ -4792,7 +4803,7 @@ figcaption {
 
 .cta {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   padding-right: 3000px;
   margin-right: -3000px;
   padding-left: 3000px;
@@ -4825,6 +4836,11 @@ figcaption {
 }
 .nav--banner li {
   margin: 0 0.2em 0 0;
+}
+@media only screen and (min-width: 481px) {
+  .nav--banner li {
+    margin: 0 4em 0 0;
+  }
 }
 .nav--banner li:last-child {
   margin: 0;
@@ -4878,6 +4894,39 @@ figcaption {
 
 .banner {
   text-align: center;
+}
+
+.banner__service, .banner__location {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  line-height: 0;
+  color: #a2a2a2;
+}
+@media only screen and (min-width: 481px) {
+  .banner__service, .banner__location {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
+  }
+}
+
+.banner__service {
+  margin: 2em 0 0 0;
+}
+@media only screen and (min-width: 481px) {
+  .banner__service {
+    margin: 2em 0 -1em 0;
+  }
+}
+
+.banner__location {
+  margin: 0.6em 0 3em 0;
+}
+@media only screen and (min-width: 481px) {
+  .banner__location {
+    margin: 0 0 3em 0;
+  }
 }
 
 .content--front-page {

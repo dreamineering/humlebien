@@ -2,3 +2,26 @@
 .banner {
   text-align: center;
 }
+
+.banner__service, .banner__location {
+  @include font-size(12px);
+  line-height: 0;
+  color:       tint($primary-color, 40%);
+  @include media-query(lap-and-up) {
+    @include font-size(18px);
+  }
+}
+
+.banner__service {
+  margin:   2em 0 0 0;
+  @include media-query(lap-and-up) {
+    margin:   2em 0 -1em 0;
+  }
+}
+
+.banner__location {
+  margin:   0.6em 0 3em 0;
+  @include media-query(lap-and-up) {
+    margin:   0 0 3em 0;
+  }
+}

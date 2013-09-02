@@ -32,7 +32,7 @@
 
   <div class="grid">
     <div class="grid__item one-whole desk-one-half">
-      <h2>Coming Events</h2>
+      <h2>Events</h2>
 
         <?php
 
@@ -92,7 +92,7 @@
 
     </div><!--
   --><div class="grid__item one-whole desk-one-half">
-      <h2>Latest Buzz</h2>
+      <h2>Seneste buzz</h2>
         <?php
             $the_query = new WP_Query('posts_per_page=2');
             while ($the_query->have_posts()) :
