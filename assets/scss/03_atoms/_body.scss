@@ -33,7 +33,7 @@ body{
  * Page-level wrapper.
  */
 .wrapper{
-    max-width:                 840px;
+    max-width:                 740px;
     margin-right:              auto;
     margin-left:               auto;
     padding-right:             $base-spacing-unit;
@@ -46,6 +46,9 @@ body{
     //     padding-left:          $half-spacing-unit;
     //     max-width:             640px;
     // }
+}
+.wrapper--home, .wrapper--footer {
+  max-width:                   1040px;
 }
 
 

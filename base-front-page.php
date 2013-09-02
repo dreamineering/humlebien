@@ -14,7 +14,7 @@
   ?>
 
   <div class="content" role="document">
-    <div class="wrapper">
+    <div class="wrapper wrapper--home">
       <div class="grid">
         <div class="main <?php echo roots_main_class(); ?>" role="main">
           <?php include roots_template_path(); ?>

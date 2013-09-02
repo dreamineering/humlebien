@@ -4547,11 +4547,15 @@ body {
  * Page-level wrapper.
  */
 .wrapper {
-  max-width: 840px;
+  max-width: 740px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 24px;
   padding-left: 24px;
+}
+
+.wrapper--home, .wrapper--footer {
+  max-width: 1040px;
 }
 
 .browser-notice {
@@ -4745,7 +4749,7 @@ figcaption {
   margin: 0;
 }
 
-.island--cta {
+.cta {
   padding-right: 3000px;
   margin-right: -3000px;
   padding-left: 3000px;
@@ -4755,7 +4759,7 @@ figcaption {
   background-color: #7ea64a;
   color: white;
 }
-.island--cta h3 {
+.cta h2 {
   color: white;
 }
 
@@ -4786,6 +4790,22 @@ figcaption {
   }
 }
 
+.cta {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 3000px;
+  margin-right: -3000px;
+  padding-left: 3000px;
+  margin-left: -3000px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #7ea64a;
+  color: white;
+}
+.cta h2 {
+  color: white;
+}
+
 .nav a {
   color: #646464;
   border-bottom: 3px solid white;
@@ -4811,6 +4831,11 @@ figcaption {
 
 .footer h3, .footer h4, .footer h5, .footer h6 {
   color: white;
+}
+.footer ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .footer--page {
@@ -4868,6 +4893,10 @@ figcaption {
   top: -35px;
   right: -50px;
   display: block;
+}
+
+.main {
+  margin: 2em 0 3em 0;
 }
 
 .test-arrow {

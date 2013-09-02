@@ -12,15 +12,20 @@
     </div>
   </div>
 
-  <div class="island island--cta">
+  <div class="cta">
     <div class="grid">
+      <div class="grid__item one-whole">
+        <h2>Komme til rundvisning</h2>
+      </div>
       <div class="grid__item one-whole desk-one-half">
-        <h3>
-          Har vi plads i bikuben for dine børn.
-        </h3>
+        <p> 
+          Der er afsat ½ time til rundvisning hver onsdag kl. 9.30. 
+          Venligst kom til tiden, så alle får det hele med fra starten. Det er ikke nødvendigt at aftale rundvisningen på forhånd.
+        </p>
       </div><!--
     --><div class="grid__item one-whole desk-one-half">
-        <a class="btn btn--cta">Join waiting list</a>
+        <p>Har du mere spørgsmål? du er velkommen til at</p>
+        <a class="btn btn--full btn--cta">siger hej</a>
       </div>
     </div>
   </div>
