@@ -4609,6 +4609,7 @@ h3, .gamma {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.09091;
+  font-weight: bold;
 }
 
 h4, .delta {
