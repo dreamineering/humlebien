@@ -1,6 +1,6 @@
 <footer class="footer footer--page" role="contentinfo">
   <div class="footer--page--light">
-    <div class="wrapper wrapper--footer">
+    <div class="wrapper wrapper--footer cf">
       <?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
   </div>
@@ -32,9 +32,9 @@
         </div><!--
      --><div class="grid__item one-whole desk-one-third">
           <div class="open-time">
-            <p>
-              <span>Åbningstider</span><br>
-              <span>Mandag - torsdag fra 7.30-17.00</span><br>
+            <h6>Åbningstider</h6>
+            <p>  
+              <span>Mandag - torsdag: 7.30-17.00</span><br>
               <span>Fredag 7.30-16.00</span>
             </p>
           </div>

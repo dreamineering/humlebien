@@ -30,78 +30,77 @@
     </div>
   </div>
 
+  <?php
+    // <div class="island">
+    //   <div class="img-wrap"></div>
+
+        //       $the_query = new WP_Query('posts_per_page=2');
+        //       while ($the_query->have_posts()) :
+        //         $the_query->the_post();
+        //         echo '<h3>' . get_the_title() . '</h3>';
+        //         echo '<p>' . get_the_excerpt() . '</p>';
+        //       endwhile;
+
+    // </div>
+  ?>
+
   <div class="grid">
-    <div class="grid__item one-whole desk-one-half">
-      <h2>Events</h2>
 
-        <?php
+    <div class="grid__item one-whole">
+      <h2>Kommende arrangementer</h2>
+    </div> 
 
-    $the_query = new WP_Query(array(
-      'post_type' => 'events',
-      'posts_per_page' => 3,
-      'orderby'   => 'menu_order'
-    ));
+    <?php
 
-    while ($the_query->have_posts()) :
-      $the_query->the_post();
-    ?>
+      $the_query = new WP_Query(array(
+        'post_type' => 'events',
+        'posts_per_page' => 3,
+        'orderby'   => 'menu_order'
+      ));
+
+      while ($the_query->have_posts()) :
+        $the_query->the_post();
+      ?>
 
     <article class="post event" id="post-<?php the_ID(); ?>">
 
-      <time>
-        <?php the_field('date_of_event'); ?>
-      </time>
+      <div class="grid__item one-whole desk-two-thirds">
+        <h3><?php the_title(); ?></h3>
+        <p><?php the_content(); ?></p>
+      </div><!-- 
+   --><div class="grid__item one-whole desk-one-third">
+        <h6>Placering</h6>   
+        <p>
+          <?php if (get_field('event_link')) { ?>
+            <a href="<?php the_field('event_link'); ?>">
+              <?php the_field('venue'); ?>
+            </a>
+          <?php } else {  ?>
+            <?php if (get_field('venue')) { ?>
+              <?php the_field('venue'); ?>
+            <?php } ?>
+          <?php } ?>
+        </p>
 
-      <h2>
+        <h6>Dato</h6> 
+        <time>
+          <?php 
+            $date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
+            echo $date->format('jS F Y');
+          ?>
+        </time>
 
-        <?php if (get_field('event_link')) { ?>
-
-          <a href="<?php the_field('event_link'); ?>">
-            <?php the_title(); ?>
-          </a>
-
-        <?php } else {  ?>
-
-          <?php the_title(); ?>
-
-        <?php } ?>
-
-      </h2>
-
-      <dl>
-
-        <dt>Hvor?</dt>
-        <dd>
-          <?php the_field('venue'); ?>
-        </dd>
-          
-        <dt>Hvem?</dt>
-        <dd>
+        <h6>Hvem</h6>   
+        <p>
           <?php if (get_field('participants')) { ?>
             <?php the_field('participants'); ?>
           <?php } ?>
-        </dd>
-
-
-      </dl>
-
+        </p>
+      </div>
     </article>
 
-  <?php endwhile; ?>
+    <?php endwhile; ?>
 
-
-    </div><!--
-  --><div class="grid__item one-whole desk-one-half">
-      <h2>Seneste buzz</h2>
-        <?php
-            $the_query = new WP_Query('posts_per_page=2');
-            while ($the_query->have_posts()) :
-              $the_query->the_post();
-              echo '<h3>' . get_the_title() . '</h3>';
-              echo '<p>' . get_the_excerpt() . '</p>';
-            endwhile;
-        ?>
-    </div>
   </div>
 
   <?php wp_link_pages(array('before' => '<nav class="nav pagination">', 'after' => '</nav>')); ?>

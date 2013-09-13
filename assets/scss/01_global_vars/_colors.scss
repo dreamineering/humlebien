@@ -57,13 +57,20 @@ $brand-color-light:     tint($brand-color, 95%);
 
 // Primary color set body text
 $primary-color:             rgba(100,100,100,1); 
-$base-ui-color:             $primary-color;           
+$base-ui-color:             $primary-color;   
+
+$headings-color:            #555;        
 
 // headings
 $secondary-color:           rgba(126, 166, 74, 1);       // Very light gray.
 
 // lighter shade of secondary color
 $third-color:               rgba(195, 216, 158, 1);
+
+// Alternate colors for contrasting backgrounds
+$alt-color:                 rgba(255,255,255, 1);
+$alt-link-color:            tint(rgba($third-color, 1), 20%);
+
 
 
 $alert-color:               #c60f13 !default;       // Strong red.
@@ -83,7 +90,4 @@ $topbar-bg:                 rgba(255,255,255, 0.97);
 $page-foot-color:           $secondary-color;
 $page-foot-color-light:     $third-color;
 
-// when dark backgrounds
-$alt-color:                 rgba(255,255,255, 1);
-$alt-link-color:            tint(rgba($page-foot-color-light, 1), 20%);
 

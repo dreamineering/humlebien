@@ -32,20 +32,12 @@ body{
 /**
  * Page-level wrapper.
  */
-.wrapper{
-    max-width:                 740px;
-    margin-right:              auto;
-    margin-left:               auto;
-    padding-right:             $base-spacing-unit;
-    padding-left:              $base-spacing-unit;
-
-
-    
-    // @include media-query(portable){
-    //     padding-right:         $half-spacing-unit;
-    //     padding-left:          $half-spacing-unit;
-    //     max-width:             640px;
-    // }
+.wrapper {
+  max-width:                 740px;
+  margin-right:              auto;
+  margin-left:               auto;
+  padding-right:             $base-spacing-unit;
+  padding-left:              $base-spacing-unit;
 }
 .wrapper--home, .wrapper--footer {
   max-width:                   1040px;

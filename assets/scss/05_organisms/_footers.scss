@@ -24,14 +24,39 @@
 .footer--page--light {
   padding-top:      3em;
   padding-bottom:   1em;
-  color:            $alt-color;
   background-color: $page-foot-color-light;
   a {
     color:          $alt-color;
   }
-  // ul {
-  //   margin-bottom:         0;
-  // }
+  .widget {
+    font-family:      $headings-face;
+    text-transform:   uppercase;
+    @include          font-size(16px);
+    line-height:      2;
+  }
+  .widget li:first-child {
+    @include          font-size(18px);
+    line-height:      2;
+  }
+  @include media-query(lap-and-up) {
+    .widget {
+      float:  left;
+      padding-right: 27%;
+    }
+    .widget:last-child {
+      padding-right: 0;
+    }
+  }
+  @include media-query(desk) {
+    .widget {
+      padding-right: 12%;
+    }
+  }
+  @include media-query(desk-wide){
+    .widget {
+      padding-right: 20%;
+    }
+  }
 }
 .footer--page--dark {
   padding:          2em 0 3em 0;
@@ -40,3 +65,4 @@
     color:          $alt-link-color;
   }
 }
+

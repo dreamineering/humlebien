@@ -5,4 +5,9 @@
 .btn--cta {
   background-color: $alt-color;
   color:            $secondary-color;
+  &:hover,
+  &:active,
+  &:focus{
+    border-bottom:    none;
+  }
 }

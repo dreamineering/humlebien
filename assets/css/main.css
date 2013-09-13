@@ -4499,21 +4499,6 @@ html.flexbox {
   margin-left: -3000px;
 }
 
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px;
-}
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
 /*------------------------------------*\
     $PAGE
 \*------------------------------------*/
@@ -4570,16 +4555,18 @@ a:hover,
 a:active,
 a:focus {
   text-decoration: none;
+  border-bottom: 3px solid #f1a13f;
 }
 
 a {
-  color: #f1a13f;
+  color: black;
+  border-bottom: 3px solid transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif;
   letter-spacing: -1px;
-  color: #7ea64a;
+  color: #555555;
 }
 
 h1, .alpha {
@@ -4649,42 +4636,6 @@ h6, .zeta {
   * base/paragraphs
   * base/quotes
  */
-blockquote {
-  quotes: "“" "”";
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
-}
-blockquote p:before {
-  content: "''";
-  content: "'";
-}
-blockquote p:after {
-  content: "";
-  content: "'";
-}
-blockquote p:last-of-type:before {
-  content: "";
-}
-blockquote p:last-of-type:after {
-  content: "";
-}
-blockquote q:before {
-  content: "'";
-  content: "'";
-}
-blockquote q:after {
-  content: "'";
-  content: "'";
-}
-@media only screen and (min-width: 481px) {
-  blockquote {
-    font-size: 13.6px;
-    font-size: 0.85rem;
-    line-height: 1.76471;
-  }
-}
-
 .animate--fade {
   -webkit-transition: opacity, 0.3s, ease-out;
   -moz-transition: opacity, 0.3s, ease-out;
@@ -4739,6 +4690,9 @@ figcaption {
   background-color: white;
   color: #7ea64a;
 }
+.btn--cta:hover, .btn--cta:active, .btn--cta:focus {
+  border-bottom: none;
+}
 
 .island > *:last-child,
 .island > *:last-child > *:last-child,
@@ -4749,44 +4703,29 @@ figcaption {
   margin: 0;
 }
 
-.cta {
-  padding-right: 3000px;
-  margin-right: -3000px;
-  padding-left: 3000px;
-  margin-left: -3000px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  background-color: #7ea64a;
-  color: white;
-}
-.cta h2 {
-  color: white;
-}
-
 .brand {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1;
-  color: #f1a13f;
   line-height: 1.5;
   font-family: "Butterfly Kids", cursive;
-}
-@media only screen and (min-width: 481px) {
-  .brand {
-    font-size: 147px;
-    font-size: 9.1875rem;
-  }
+  color: #f1a13f;
 }
 
 .brand--banner {
-  line-height: 1.4;
   font-weight: bold;
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
+  line-height: 1.4;
 }
 @media only screen and (min-width: 481px) {
   .brand--banner {
-    line-height: 1;
+    font-size: 147px;
+    font-size: 9.1875rem;
+    line-height: 0.9;
     font-weight: normal;
   }
+}
+.brand--banner:hover, .brand--banner:active, .brand--banner:focus {
+  border-bottom: none;
 }
 
 .logo {
@@ -4818,7 +4757,7 @@ figcaption {
 }
 
 .nav a {
-  color: #646464;
+  color: black;
   border-bottom: 3px solid white;
 }
 .nav a:hover,
@@ -4831,6 +4770,7 @@ figcaption {
 }
 
 .nav--banner {
+  font-family: "Varela Round", sans-serif;
   letter-spacing: -1px;
   text-transform: uppercase;
 }
@@ -4866,11 +4806,43 @@ figcaption {
 .footer--page--light {
   padding-top: 3em;
   padding-bottom: 1em;
-  color: white;
   background-color: #c3d89e;
 }
 .footer--page--light a {
   color: white;
+}
+.footer--page--light .widget {
+  font-family: "Varela Round", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  line-height: 2;
+}
+.footer--page--light .widget li:first-child {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  line-height: 2;
+}
+@media only screen and (min-width: 481px) {
+  .footer--page--light .widget {
+    float: left;
+    padding-right: 27%;
+  }
+  .footer--page--light .widget:last-child {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .footer--page--light .widget {
+    padding-right: 12%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer--page--light .widget {
+    padding-right: 20%;
+  }
 }
 
 .footer--page--dark {
@@ -4897,35 +4869,39 @@ figcaption {
 }
 
 .banner__service, .banner__location {
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
   line-height: 0;
   color: #a2a2a2;
-}
-@media only screen and (min-width: 481px) {
-  .banner__service, .banner__location {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 1.33333;
-  }
 }
 
 .banner__service {
   margin: 2em 0 0 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  line-height: 0;
 }
 @media only screen and (min-width: 481px) {
   .banner__service {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
     margin: 2em 0 -1em 0;
   }
 }
 
 .banner__location {
-  margin: 0.6em 0 3em 0;
+  margin: 0 0 3em 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  line-height: 0;
 }
 @media only screen and (min-width: 481px) {
   .banner__location {
     margin: 0 0 3em 0;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.71429;
   }
 }
 

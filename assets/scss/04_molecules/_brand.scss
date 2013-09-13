@@ -1,21 +1,24 @@
 
 
 .brand {
-  @include      font-size($kilo-size);
-  color:        $brand-color;
   line-height:  1.5;
   font-family:  $brand-face;
-  @include media-query(lap-and-up) {
-    @include      font-size($giga-size, false);
-  }
+  color:        $brand-color;
 }
 
 .brand--banner {
-  line-height: 1.4;
   font-weight: bold;
+  @include      font-size($kilo-size);
+  line-height: 1.4;
   @include media-query(lap-and-up) {
-    line-height: 1;
+    @include      font-size($giga-size, false);
+    line-height: 0.9;
     font-weight: normal;
+  }
+  &:hover,
+  &:active,
+  &:focus{
+    border-bottom:    none;
   }
 }
 
